@@ -55,6 +55,10 @@ final public class RageShakeViewModel: Identifiable, ObservableObject {
 
 public struct WRageShakeView: View {
   @ObservedObject var model: RageShakeViewModel
+  
+  public init(model: RageShakeViewModel) {
+    self.model = model
+  }
 
   public var body: some View {
     VStack {
